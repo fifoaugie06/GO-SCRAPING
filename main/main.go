@@ -17,6 +17,7 @@ func main() {
 	news := router.Group("/news")
 	{
 		news.GET("/", inDB.ScrapeAllNews)
+		news.GET("/limit", inDB.ScrapeLimitNews)
 		news.GET("/detail", inDB.ScrapeDetailNews)
 	}
 

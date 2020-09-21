@@ -1,7 +1,6 @@
 package config
 
 import (
-	"SIMCOVID-API/structs"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
@@ -14,7 +13,7 @@ func DBInit() *gorm.DB {
 		panic(err.Error())
 	}
 
-	db.AutoMigrate(structs.User{}, structs.News{}, structs.Hoax{}, structs.Protokol{}, structs.EducationCategory{},
-		structs.Education{}, structs.QnA{})
+	//db.AutoMigrate(structs.User{}, structs.News{}, structs.Hoax{}, structs.Protokol{}, structs.EducationCategory{},
+	//	structs.Education{}, structs.QnA{})
 	return db
 }
