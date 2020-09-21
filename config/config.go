@@ -6,8 +6,8 @@ import (
 )
 
 func DBInit() *gorm.DB {
-	//db, err := gorm.Open("mysql", "faftechm_baiturrahman:@Labithotspot123@/faftechm_simcovid?charset=utf8&parseTime=True&loc=Local")
-	db, err := gorm.Open("mysql", "root@/simcovid?charset=utf8&parseTime=True&loc=Local")
+	db, err := gorm.Open("mysql", "faftechm_baiturrahman:@Labithotspot123@/faftechm_simcovid?charset=utf8&parseTime=True&loc=Local")
+	//db, err := gorm.Open("mysql", "root@/simcovid?charset=utf8&parseTime=True&loc=Local")
 
 	if err != nil {
 		panic(err.Error())
